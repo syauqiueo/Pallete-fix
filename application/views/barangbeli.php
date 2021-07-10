@@ -32,7 +32,6 @@
                     <th>Jumlah Barang</th>
                     <th>Harga Barang</th>
                     <th>Total</th>
-                    <th>Owner</th>
                     <th>Status</th>
                     <th>Action</th>
                   </tr>
@@ -51,7 +50,6 @@
                     <td><?= $barangbeli['jumlah_brg'];?></td>
                     <td><?="Rp. ".number_format($barangbeli['harga_brg']);?></td>
                     <td><?="Rp. ".number_format($barangbeli['total']);?></td>
-                    <td><?= $barangbeli['owner'];?></td>
                     <td><?= $barangbeli['status'];?></td>
                     <td>
                       <div class="btn-group">

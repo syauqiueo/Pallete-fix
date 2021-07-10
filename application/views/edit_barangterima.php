@@ -17,38 +17,38 @@
         <form method="POST" enctype="multipart/form-data" action="<?= base_url('dashboard/proses_edit_barangterima/'.$databarangterima[0]['id']); ?>">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Tanggal</label>
-                    <input type="date" class="form-control" name="tanggal" required>
+                    <input type="date" class="form-control" name="tanggal" value="<?= set_value('tanggal',$databarangterima[0]['tanggal'])?>" required>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Nama Barang</label>
-                    <input type="text" class="form-control" name="nama_brg" required>
+                    <input type="text" class="form-control" name="nama_brg" value="<?= set_value('nama_brg',$databarangterima[0]['nama_brg'])?>" required>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Merk Barang</label>
-                    <input type="text" class="form-control" name="merk_brg" required>
+                    <input type="text" class="form-control" name="merk_brg" value="<?= set_value('merk_brg',$databarangterima[0]['merk_brg'])?>" required>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Jumlah Barang</label>
-                    <input type="number" class="form-control" name="jumlah_brg" required>
+                    <input type="number" class="form-control" name="jumlah_brg" value="<?= set_value('jumlah_brg',$databarangterima[0]['jumlah_brg'])?>" required>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Harga Barang</label>
-                    <input type="number" class="form-control" name="harga_brg" required>
+                    <input type="number" class="form-control" name="harga_brg" value="<?= set_value('harga_brg',$databarangterima[0]['harga_brg'])?>" required>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Total</label>
-                    <input type="number" class="form-control" name="total" required>
+                    <input type="number" class="form-control" name="total" value="<?= set_value('total',$databarangterima[0]['total'])?>" required>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Penerima</label>
-                    <input type="text" class="form-control" name="penerima" required>
+                    <input type="text" class="form-control" name="penerima" value="<?= set_value('penerima',$databarangterima[0]['penerima'])?>" required>
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <label class="input-group-text" for="inputGroupSelect01">Status</label>
                     </div>
-                    <select class="custom-select" id="inputGroupSelect01" name="status"  required>
-                        <option selected ></option>
+                    <select class="custom-select" id="inputGroupSelect01" name="status" value="<?= set_value('status',$databarangterima[0]['status'])?>" required>
+                        <option   selected ><?=$databarangterima[0]['status']?></option>
                         <option value="Bayar Ditempat">Bayar Ditempat</option>
                         <option value="Sudah Bayar">Sudah Bayar</option>
                     </select>

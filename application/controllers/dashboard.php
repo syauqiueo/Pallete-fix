@@ -3,6 +3,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Dashboard extends CI_Controller {
 
+   public function __construct(){
+    parent::__construct();
+    $this->load->library('form_validation');
+}
   public function index(){
 
     if($this->session->userdata('token') == ''){
@@ -877,6 +881,42 @@ class Dashboard extends CI_Controller {
               window.location.href='".base_url('dashboard/list_barangterima')."';
               </script>");
               return;
+      }
+    }
+  }
+
+  public function accept($id){
+    if($this->session->userdata('token') == ''){
+      return redirect(base_url('dashboard/login'));
+    }else{
+      if($this->session->userdata('isLoginAdmin') == true){
+
+              $url = base_url('/api/main/accept/id/'.$id);
+              $curl = curl_init($url);
+              curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "POST");
+          
+              curl_setopt($curl, CURLOPT_HTTPHEADER, array(
+                'Authorization: Bearer '.$this->session->userdata('token')
+                )
+              );
+      
+              /* Set JSON data to POST */
+      
+              curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);  // Make it so the data coming back is put into a string
+              // Send the request
+              $result = curl_exec($curl);
+              // Free up the resources $curl is using
+              curl_close($curl);
+      
+              $getBarang = json_decode($result,true);
+      
+              
+              echo ("<script LANGUAGE='JavaScript'>
+              window.alert('Berhasil di Accept');
+              window.location.href='".base_url('dashboard/list_barang')."';
+              </script>");
+              return;
+
       }
     }
   }

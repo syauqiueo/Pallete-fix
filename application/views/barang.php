@@ -57,6 +57,7 @@
                     <td><?= $barang['status'];?></td>
                     <td>
                       <div class="btn-group">
+                        <a class="btn btn-success" href="<?= base_url('dashboard/accept/'.$barang['id'])?>"><i class="icon_check"></i></a>
                         <a class="btn btn-primary" href="<?= base_url('dashboard/edit_barang/'.$barang['id'])?>"><i class="icon_pencil"></i></a>
                         <a class="btn btn-danger" href="<?= base_url('dashboard/delete_barang/'.$barang['id'])?>"><i class="icon_close"></i></a>
                     </div>
