@@ -6,10 +6,14 @@
            
 <!-- Page Heading -->
 <!-- DataTales Example -->
-    <div class="card shadow mb-4 mt-2">
-        <div class="card-header py-3">
-        </div>
-        <div class="card-body">
+<div class="row">
+          <div class="col-lg-12">
+            <section class="panel">
+              <header class="panel-heading">
+                Form Edit
+              </header>
+              <div class="panel-body">
+                <div class="form">
         <form method="POST" enctype="multipart/form-data" action="<?= base_url('android/proses_edit_barang/'.$databarang[0]['id']); ?>">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Tanggal</label>

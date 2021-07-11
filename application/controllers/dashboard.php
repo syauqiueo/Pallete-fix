@@ -288,12 +288,12 @@ class Dashboard extends CI_Controller {
            $deleteUser = json_decode($result,true);
            if($deleteUser['status'] == 200){
              echo ("<script LANGUAGE='JavaScript'>
-             window.alert('User deleted!');
+             window.alert('Barang permintaan dihapus!');
              window.location.href='".base_url('dashboard/list_barang')."';
              </script>");
            }else{
              echo ("<script LANGUAGE='JavaScript'>
-             window.alert('Failed to delete');
+             window.alert('Barang permintaan gagal dihapus');
              window.location.href='".base_url('dashboard/list_barang')."';
              </script>");
            }
@@ -316,12 +316,12 @@ class Dashboard extends CI_Controller {
            $deleteUser = json_decode($result,true);
            if($deleteUser['status'] == 200){
              echo ("<script LANGUAGE='JavaScript'>
-             window.alert('User deleted!');
+             window.alert('Barang pembelian dihapus!');
              window.location.href='".base_url('dashboard/list_barangbeli')."';
              </script>");
            }else{
              echo ("<script LANGUAGE='JavaScript'>
-             window.alert('Failed to delete');
+             window.alert('Barang pembelian gagal dihapus!');
              window.location.href='".base_url('dashboard/list_barangbeli')."';
              </script>");
            }
@@ -344,12 +344,12 @@ class Dashboard extends CI_Controller {
            $deleteUser = json_decode($result,true);
            if($deleteUser['status'] == 200){
              echo ("<script LANGUAGE='JavaScript'>
-             window.alert('User deleted!');
+             window.alert('Barang penerimaan dihapus!');
              window.location.href='".base_url('dashboard/list_barangterima')."';
              </script>");
            }else{
              echo ("<script LANGUAGE='JavaScript'>
-             window.alert('Failed to delete');
+             window.alert('Barang penerimaan gagal dihapus!');
              window.location.href='".base_url('dashboard/list_barangterima')."';
              </script>");
            }
