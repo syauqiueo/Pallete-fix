@@ -194,12 +194,12 @@ class Android extends CI_Controller {
            $deleteUser = json_decode($result,true);
            if($deleteUser['status'] == 200){
              echo ("<script LANGUAGE='JavaScript'>
-             window.alert('Barang deleted!');
+             window.alert('Barang permintaan dihapus!');
              window.location.href='".base_url('android/list_barang')."';
              </script>");
            }else{
              echo ("<script LANGUAGE='JavaScript'>
-             window.alert('Failed to delete');
+             window.alert('Barang permintaan gagal dihapus!');
              window.location.href='".base_url('android/list_barang')."';
              </script>");
            }
@@ -224,12 +224,12 @@ class Android extends CI_Controller {
            $deleteUser = json_decode($result,true);
            if($deleteUser['status'] == 200){
              echo ("<script LANGUAGE='JavaScript'>
-             window.alert('User deleted!');
+             window.alert('Barang penerimaan dihapus!');
              window.location.href='".base_url('android/list_barangterima')."';
              </script>");
            }else{
              echo ("<script LANGUAGE='JavaScript'>
-             window.alert('Failed to delete');
+             window.alert('Barang penerimaan gagal dihapus!');
              window.location.href='".base_url('android/list_barangterima')."';
              </script>");
            }
