@@ -21,7 +21,7 @@
                       </a>
             <ul class="sub">
 
-              <li><a class="" href="<?=base_url('dashboard/list_barang')?>">Permohonan</a></li>
+              <li><a class="" href="<?=base_url('dashboard/list_barang')?>">Permintaan</a></li>
               <li><a class="" href="<?=base_url('dashboard/list_barangbeli')?>">Pembelian</a></li>
               <li><a class="" href="<?=base_url('dashboard/list_barangterima')?>">Penerimaan</a></li>
               

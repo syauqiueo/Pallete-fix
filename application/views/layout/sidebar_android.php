@@ -11,7 +11,7 @@
           </li>
           <li class="active">
             <a class="" href="<?=base_url('android/list_barang')?>">
-                          <span>Permohonan</span>
+                          <span>Permintaan</span>
                       </a>
 
           </li>
