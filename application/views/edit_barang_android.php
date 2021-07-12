@@ -2,7 +2,7 @@
       <section class="wrapper">
         <div class="row">
           <div class="col-lg-12">
-            <h3 class="page-header"><i class="fa fa-table"></i>EDIT PERMOHONAN BARANG</h3>
+            <h3 class="page-header"><i class="fa fa-table"></i>EDIT PERMINTAAN BARANG</h3>
            
 <!-- Page Heading -->
 <!-- DataTales Example -->

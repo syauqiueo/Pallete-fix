@@ -2,11 +2,11 @@
       <section class="wrapper">
         <div class="row">
           <div class="col-lg-12">
-            <h3 class="page-header"><i class="fa fa-table"></i>EDIT PERMOHONAN BARANG</h3>
+            <h3 class="page-header"><i class="fa fa-table"></i>EDIT PERMINTAAN BARANG</h3>
             <ol class="breadcrumb">
               <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
               <li><i class="fa fa-table"></i>Master Data</li>
-              <li><i class="fa fa-th-list"></i>Edit Permohonan Barang</li>
+              <li><i class="fa fa-th-list"></i>Edit Permintaan Barang</li>
             </ol>
 <!-- DataTales Example -->
         <div class="row">

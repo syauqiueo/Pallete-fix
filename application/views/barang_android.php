@@ -2,7 +2,7 @@
       <section class="wrapper">
         <div class="row">
           <div class="col-lg-12">
-            <h3 class="page-header"><i class="fa fa-table"></i>LIST PERMOHONAN BARANG</h3>
+            <h3 class="page-header"><i class="fa fa-table"></i>LIST PERMINTAAN BARANG</h3>
            
                 <button class="btn btn-success"   type="button" data-toggle="modal" data-target="#exampleModal">
                   <i class="icon_plus"></i>
@@ -78,7 +78,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Tambah Permohonan</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Tambah Permintaan</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

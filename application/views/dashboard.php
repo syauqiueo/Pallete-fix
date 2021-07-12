@@ -32,7 +32,7 @@
                             <p><span>Email </span>: palettecoffe.jkt@gmail.com</p>
                           </div>
                           <div class="bio-row">
-                            <p><span>Phone </span>: (+021) 956 789123</p>
+                            <p><span>Phone </span>: 0812-9153-3326</p>
                           </div>
                           <div class="bio-row">
                             <p><span>Instagram </span>: @paletteecoffee</p>
